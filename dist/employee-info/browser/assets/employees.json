@@ -1,0 +1,39 @@
+
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "department": "Engineering",
+    "email": "john.doe@example.com",
+    "phone": "123-456-7890",
+    "joiningDate": "2020-01-15",
+    "profilePicture": "https://randomuser.me/api/portraits/men/1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "department": "Marketing",
+    "email": "jane.smith@example.com",
+    "phone": "987-654-3210",
+    "joiningDate": "2021-03-22",
+    "profilePicture": "https://randomuser.me/api/portraits/women/2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Mike Johnson",
+    "department": "HR",
+    "email": "mike.johnson@example.com",
+    "phone": "555-666-7777",
+    "joiningDate": "2019-07-30",
+    "profilePicture": "https://randomuser.me/api/portraits/men/3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Emily Davis",
+    "department": "Finance",
+    "email": "emily.davis@example.com",
+    "phone": "222-333-4444",
+    "joiningDate": "2022-11-10",
+    "profilePicture": "https://randomuser.me/api/portraits/women/4.jpg"
+  }
+]

@@ -1,0 +1,4 @@
+<select (change)="onDepartmentChange($event)" [value]="selected" style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
+  <option value="">All Departments</option>
+  <option *ngFor="let dept of departments" [value]="dept">{{ dept }}</option>
+</select>

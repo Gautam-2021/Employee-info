@@ -1,0 +1,23 @@
+<h2 style="text-align: center; margin-top: 20px;">Employee List</h2>
+
+<div style="max-width: 500px; margin: 0 auto 20px; display: flex; gap: 10px;">
+  <app-search (searchChanged)="onSearchChange($event)"></app-search>
+  <app-department-filter 
+    [departments]="departments" 
+    [selected]="selectedDepartment" 
+    (departmentChanged)="onDepartmentChange($event)">
+  </app-department-filter>
+</div>
+
+<div *ngFor="let employee of filteredEmployees" (click)="goToDetails(employee)"
+     style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; cursor: pointer; margin: 16px auto; max-width: 500px; box-shadow: 2px 2px 8px #aaa;">
+  <div style="display: flex; align-items: center; gap: 16px;">
+    <img [src]="employee.profilePicture" alt="{{employee.name}}" width="80" height="80" style="border-radius: 50%;">
+    <div>
+      <h3 style="margin: 0;">{{ employee.name }}</h3>
+      <p style="margin: 4px 0;"><strong>Department:</strong> {{ employee.department }}</p>
+      <p style="margin: 4px 0;"><strong>Email:</strong> {{ employee.email }}</p>
+      <p style="margin: 4px 0;"><strong>Joining Date:</strong> {{ employee.joiningDate }}</p>
+    </div>
+  </div>
+</div>

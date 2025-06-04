@@ -1,0 +1,11 @@
+<div class="employee-details-container" *ngIf="employee">
+  <div class="employee-card">
+    <h2>{{ employee.name }}</h2>
+    <img [src]="employee.profilePicture" width="100" alt="Profile" />
+    <p><strong>ID:</strong> {{ employee.id }}</p>
+    <p><strong>Email:</strong> {{ employee.email }}</p>
+    <p><strong>Phone:</strong> {{ employee.phone }}</p>
+    <p><strong>Department:</strong> {{ employee.department }}</p>
+    <p><strong>Joining Date:</strong> {{ employee.joiningDate }}</p>
+  </div>
+</div>
